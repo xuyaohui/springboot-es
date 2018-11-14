@@ -1,0 +1,20 @@
+#spring.data.elasticsearch.cluster-name: elasticsearch   #�ڵ����֣�Ĭ��elasticsearch
+#spring.data.elasticsearch.cluster-nodes: 127.0.0.1:9200  #�ڵ��ַ������ڵ��ö��Ÿ���
+##spring.data.elasticsearch.local: false
+#spring.data.elasticsearch.repositories.enabled: true
+
+server:
+  port: 8081
+diy:
+  elasticsearch:
+    cluster-name: momoes
+    host: 192.168.32.50
+    port: 9200
+    uniqueConnectTimeConfig: true
+    uniqueConnectNumConfig: true
+    schema: http
+    connectTimeOut: 30000
+    socketTimeOut: 30000
+    connectionRequestTimeOut: 5000
+    maxConnectNum: 100
+    maxConnectPerRoute: 100
